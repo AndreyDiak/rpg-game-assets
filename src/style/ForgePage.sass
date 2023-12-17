@@ -1,0 +1,44 @@
+.forge
+  padding-top: 100px
+  padding-bottom: 10px
+  background: url('../img/bg_forge.jpg') center no-repeat
+  background-size: cover
+  &Content
+    margin: 0 auto
+    display: grid
+    grid-template-columns: 3fr 1fr
+    width: 80%
+    &__metals  
+      padding: 10px
+      &List
+        padding: 10px
+        display: grid
+        // column-gap: 5px
+        // justify-content: center
+        grid-template-columns: 1fr 1fr 1fr
+        width: calc(64px*3 + 2*10px + 2*5px)
+        grid-gap: 5px
+        // grid-template-columns: 1fr 1fr 1fr
+        background: rgba(141, 110, 99, 0.6)
+        &__item
+          position: relative
+          background: url('../img/border.png') center no-repeat
+          width: 64px
+          height: 64px
+          &:hover
+            cursor: pointer
+          &Img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 32px
+            height: 32px
+            img
+              width: 100%
+    &__craft
+      background: #ff9e80
+      &Menu
+        display: flex
+        justify-content: center
+        column-gap: 10px

@@ -1,0 +1,130 @@
+.chestInfo {
+  padding: 30px;
+  background: url("../img/bg_modal.jpg") center no-repeat;
+  font-family: "Balsamiq Sans", sans-serif; }
+  .chestInfo__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center; }
+  .chestInfo__loot {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    font-size: 18px;
+    background: rgba(210, 180, 140, 0.5);
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 900;
+    z-index: 10; }
+    .chestInfo__lootImg {
+      min-width: 30px;
+      max-width: 100px; }
+      .chestInfo__lootImg img {
+        width: 100%; }
+  .chestInfo__title {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    z-index: 10; }
+.chestOpen {
+  padding: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  min-height: 330px;
+  background: url("../img/bg_modal.jpg") center no-repeat;
+  background-size: cover; }
+  .chestOpen__road {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 7s ease; }
+    .chestOpen__roadBlock {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+      width: 100px;
+      height: 150px;
+      border-radius: 5px;
+      filter: drop-shadow(0 0 10px #000); }
+      .chestOpen__roadBlock__img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30px !important;
+        height: 30px !important; }
+        .chestOpen__roadBlock__img img {
+          width: 100%; }
+      .chestOpen__roadBlock img {
+        width: 100%;
+        height: 100%; }
+  .chestOpen__loot {
+    padding-bottom: 30px;
+    font-family: "Balsamiq Sans", sans-serif;
+    z-index: 10;
+    display: flex;
+    flex-direction: column; }
+    .chestOpen__lootHeader {
+      text-align: center;
+      font-size: 32px;
+      z-index: 10;
+      font-weight: 900;
+      color: #fff; }
+    .chestOpen__lootBlock {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 20px;
+      font-size: 40px;
+      font-weight: 900;
+      text-shadow: 0 0 30px #fff;
+      color: #fff0f6; }
+      .chestOpen__lootBlock__text {
+        z-index: 10; }
+      .chestOpen__lootBlock__img {
+        width: 40px;
+        z-index: 100; }
+        .chestOpen__lootBlock__img img {
+          width: 100%; }
+.chestRoad {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid #8B4513;
+  top: 50px;
+  overflow: hidden;
+  width: 800px;
+  height: 180px;
+  border-radius: 10px;
+  background: rgba(210, 180, 140, 0.35);
+  z-index: 10; }
+  .chestRoadResult {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-top: 20px solid #8B4513;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+    z-index: 10; }
+  .chestRoadButton {
+    position: absolute;
+    bottom: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; }
+
+/*# sourceMappingURL=Chest.css.map */

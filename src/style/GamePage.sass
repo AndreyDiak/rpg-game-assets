@@ -1,0 +1,388 @@
+.game
+  padding-top: 50px
+  position: relative
+  background-size: cover
+  width: 100%
+  height: 100vh
+  &List
+    padding: 5px
+    display: flex
+    flex-direction: column
+    position: absolute
+    top: 0
+    width: 350px
+    z-index: 100
+    background: #f4d4bd
+    font-family: 'Balsamiq Sans', sans-serif
+    &Enemy
+      border-bottom-left-radius: 10px
+      right: 0
+    &Player
+      left: 0
+    &Block
+      padding-bottom: 15px
+      margin-bottom: 15px
+      display: grid
+      justify-content: center
+      column-gap: 10px
+      grid-template-areas: 'img stats'
+      border-bottom: 1px solid saddlebrown
+      &:last-child
+        border-bottom: none
+      &__stats
+        padding: 10px
+        width: 180px
+        position: relative
+        background: rgba(0, 0, 0, 0.2)
+        border-radius: 5px
+        &Line
+          position: relative
+          display: flex
+          align-items: center
+          justify-content: space-between
+          img
+            &:hover
+              cursor: pointer
+      &__img
+        width: 90px
+        height: 90px
+        img
+          width: 100%
+    &Header
+      padding-top: 10px
+      margin-bottom: 10px
+      font-size: 24px
+      text-align: center
+      border-bottom: 1px solid saddlebrown
+
+  &Content
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+    width: 80%
+    z-index: 11
+    &Header
+      display: flex
+      justify-content: center
+      margin-top: 20px
+      margin-bottom: 20px
+      text-align: center
+      font-family: 'Acme', sans-serif
+      color: #fff
+      z-index: 10
+    &Board
+      display: flex
+      justify-content: center
+      column-gap: 100px
+      &__block
+        display: flex
+        width: 120px
+        height: 120px
+        background: rgba(0,0,0,0.6)
+        position: relative
+
+        &:nth-child(1)
+          border-top-left-radius: 20px
+        &:nth-child(4)
+          border-top-right-radius: 20px
+        &:nth-child(13)
+          border-bottom-left-radius: 20px
+        &:nth-child(16)
+          border-bottom-right-radius: 20px
+        &:hover
+          cursor: pointer
+        &__stats
+          display: flex
+          justify-content: center
+          align-items: center
+          position: absolute
+          width: 20px
+          height: 20px
+          background: rgba(0,0,0,0.6)
+          z-index: 20
+        &__hp
+          display: flex
+          justify-content: space-between
+          width: 100%
+          top: 0
+          left: 0
+          border: 1px solid #cccccc
+          border-radius: 1px
+          &Block
+            height: 18px
+            background: green
+
+            &__text
+              position: absolute
+              font-weight: 900
+              color: #fff0f4
+              left: 50%
+              top: 50%
+              transform: translate(-50%, -45%)
+        &__damage
+          bottom: 0
+          left: 0
+        &__armor
+          bottom: 0
+          right: 0
+
+      &__enemy, &__player
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-gap: 10px
+        &Block
+          position: relative
+          &__support
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            display: grid
+            grid-template-columns: 1fr 1fr
+            z-index: 20
+            &Item
+              width: 32px
+              height: 32px
+              z-index: 21
+
+          &__dead
+            display: block
+            position: absolute
+            width: 100%
+            height: 100%
+            z-index: 101
+            img
+              width: 100%
+          &__img
+            position: relative
+            width: 100%
+            height: 100%
+            z-index: 10
+            &__damage
+              position: absolute
+              left: 0
+              bottom: 0
+              width: 32px
+              height: 32px
+              //background: url('../img/types/border.png') center no-repeat
+              //background-size: cover
+              img
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50% ,-50%)
+                width: 32px !important
+                height: 32px
+            &__upgrade
+              position: absolute
+              right: 0
+              width: 24px
+              height: 24px
+              &Damage
+                bottom: 0
+              &Hp
+                bottom: 24px
+              &Armor
+                bottom: 48px
+              img
+                width: 100%
+            img
+              width: 100%
+    &Menu
+      padding: 15px
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      width: calc(2*510px + 300px)
+      font-family: 'Balsamiq Sans', sans-serif
+      border-top-right-radius: 10px
+      border-top-left-radius: 10px
+      background: rgba(244, 212, 189, 0.9)
+      z-index: 10
+      &__active
+        padding: 15px
+        &Person
+          display: grid
+          grid-template-areas: 'img stats upgrades' 'about about about' 'button button button'
+          &__stat
+            display: flex
+            align-items: center
+            width: 160px
+            position: relative
+            &s
+              grid-area: stats
+          &__upgrades
+            margin-top: -64px
+            margin-left: 24px
+            grid-area: upgrades
+            &Block
+              position: relative
+              background: url('../img/border.png') center no-repeat
+              width: 64px
+              height: 64px
+              &__img
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+          &__about
+            grid-area: about
+            font-size: 16px
+          &__img
+            grid-area: img
+            margin-right: 16px
+            width: 110px
+            height: 110px
+            border: 2px solid saddlebrown
+            img
+              width: 100%
+          &__support
+            display: flex
+            column-gap: 5px
+            &Item
+              border: 1px solid black
+        &Block
+
+          display: grid
+          grid-template-areas: 'img about' 'button button'
+          column-gap: 15px
+          row-gap: 5px
+          &__img
+            grid-area: img
+            position: relative
+            width: 64px
+            height: 64px
+            background: url('../img/border.png') center no-repeat
+            img
+              max-width: 100px
+              position: absolute
+              top: 50%
+              left: 50%
+              transform: translate(-50%, -50%)
+          &__about
+            grid-area: about
+            font-size: 18px
+            &__danger
+              margin-top: 10px
+          &__button
+            grid-area: button
+            text-align: center
+
+        &Header
+          text-align: center
+          margin-bottom: 5px
+          color: #424242
+          font-size: 24px
+      &__inventory
+        display: flex
+        align-items: center
+        column-gap: 15px
+        padding: 10px
+        z-index: 10
+        border-right: 2px solid saddlebrown
+        &__block
+          text-align: center
+          &Header
+            margin-bottom: 5px
+            color: #424242
+            font-size: 24px
+          &List
+            margin: 0 auto
+            display: grid
+            justify-content: center
+            grid-template-columns: repeat(5, 64px)
+            grid-gap: 10px
+            &__upgrades
+              grid-template-columns: repeat(1, 64px)
+            &__item
+              position: relative
+              background: url('../img/border.png') center no-repeat
+              width: 64px
+              height: 64px
+              &:hover
+                cursor: pointer
+              &Text
+                position: absolute
+                text-align: center
+                bottom: 4px
+                right: 4px
+                background: #e4a672
+                border-top-left-radius: 10px
+                color: #181425
+                width: 24px
+                height: 24px
+                &__block
+                  position: absolute
+                  font-weight: 900
+                  font-size: 18px
+                  top: 50%
+                  left: 50%
+                  transform: translate(-50%, -50%)  
+              &Img
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                img
+                  width: 100%
+
+      &__characters
+        padding: 10px
+        z-index: 10
+        border-right: 2px solid saddlebrown
+        &Header
+          margin-bottom: 15px
+          text-align: center
+          color: #424242
+          font-size: 24px
+        &List
+          display: flex
+          column-gap: 15px
+        &Block
+          z-index: 10
+          &__none
+            width: 60px
+            height: 60px
+            background: #9d532f
+            border: 2px solid #5d4037
+          &__price
+            text-align: center
+            &Button
+              font-size: 20px
+              width: 60px
+              padding-top: 0
+              padding-bottom: 0
+              background: #9d532f
+              border: 1px solid #5d4037
+              color: white
+          &__img
+            margin-bottom: 10px
+            width: 60px
+            height: 60px
+            z-index: 10
+            border: 3px solid #9d532f
+            border-radius: 2px
+            &:hover
+              cursor: pointer
+            img
+              width: 100%
+      &__popup
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        background: rgba(0,0,0,0.5)
+        border-top-right-radius: 10px
+        border-top-left-radius: 10px
+        z-index: 100
+        &Text
+          font-size: 24px
+          color: #fff0f4
+          text-shadow: 1px 1px 2px darkgrey, 0 0 5px yellow

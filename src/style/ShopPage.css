@@ -1,0 +1,132 @@
+.shop {
+  background: url("../img/bg_shop.jpg") center no-repeat;
+  background-size: cover;
+  font-family: "Balsamiq Sans", sans-serif; }
+  .shopContent {
+    padding: 1px 100px 150px;
+    margin: 0 auto;
+    width: 70%;
+    z-index: 10; }
+    .shopContent__header {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: #fff0f4;
+      font-size: 32px;
+      font-weight: 900;
+      text-shadow: 1px 1px 2px black, 0 0 10px yellow; }
+      .shopContent__header span {
+        z-index: 10; }
+    .shopContent__chest {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-radius: 4px;
+      background: rgba(255, 235, 205, 0.5);
+      text-align: center;
+      z-index: 10; }
+      .shopContent__chestHeader {
+        font-size: 24px; }
+      .shopContent__chestImg {
+        width: 250px;
+        transition: 1s ease; }
+        .shopContent__chestImg:hover {
+          cursor: pointer;
+          transform: scale(1.1); }
+        .shopContent__chestImg img {
+          width: 100%; }
+      .shopContent__chestButton {
+        margin-top: 20px; }
+        .shopContent__chestButton button {
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          column-gap: 5px;
+          font-size: 24px; }
+          .shopContent__chestButton button img {
+            width: 22px; }
+          .shopContent__chestButton button:hover {
+            cursor: pointer; }
+      .shopContent__chests {
+        display: flex;
+        justify-content: center;
+        row-gap: 30px;
+        column-gap: 30px;
+        flex-wrap: wrap; }
+    .shopContent__bonus {
+      margin: 30px auto 0 auto;
+      max-width: calc(250px * 4 + 30px * 3);
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 30px;
+      row-gap: 30px;
+      justify-content: center; }
+      .shopContent__bonusBlock {
+        padding: 30px 0;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+        background: rgba(255, 235, 205, 0.3);
+        border-radius: 5px;
+        z-index: 10; }
+        .shopContent__bonusBlock__text {
+          font-weight: 900;
+          font-size: 32px;
+          color: #fff;
+          text-shadow: 1px 1px 2px black, 0 0 1em brown; }
+        .shopContent__bonusBlock__img {
+          position: relative;
+          width: 195px;
+          height: 284px; }
+          .shopContent__bonusBlock__img img {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%); }
+          .shopContent__bonusBlock__imgCurrency {
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            width: 35px;
+            height: 35px; }
+            .shopContent__bonusBlock__imgCurrency img {
+              width: 100%; }
+        .shopContent__bonusBlock__button button {
+          font-size: 24px; }
+    .shopContent__trade {
+      display: flex;
+      justify-content: center;
+      row-gap: 30px;
+      column-gap: 30px; }
+      .shopContent__tradeBlock {
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+        border-radius: 5px;
+        background: rgba(255, 235, 205, 0.3);
+        z-index: 10; }
+        .shopContent__tradeBlock__img {
+          position: relative; }
+          .shopContent__tradeBlock__imgCurrency {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 30px;
+            height: 30px; }
+            .shopContent__tradeBlock__imgCurrency img {
+              width: 100%;
+              height: 100%; }
+        .shopContent__tradeBlock__text {
+          font-weight: 900;
+          font-size: 32px;
+          color: #fff; }
+        .shopContent__tradeBlock__button button img {
+          width: 25px;
+          height: 25px; }
+
+/*# sourceMappingURL=ShopPage.css.map */

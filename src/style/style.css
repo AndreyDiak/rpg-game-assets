@@ -1,0 +1,1278 @@
+.info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  background-color: #32475B;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 100; }
+  .infoPlayer {
+    padding: 20px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    font-size: 20px; }
+  .infoBlock {
+    display: flex;
+    column-gap: 10px;
+    align-items: center; }
+    .infoBlock__value {
+      font-size: 20px; }
+    .infoBlock__img {
+      width: 32px;
+      height: 32px; }
+      .infoBlock__img img {
+        width: 100%;
+        height: 100%; }
+    .infoBlocks {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      column-gap: 30px; }
+
+.deck {
+  background: url("../img/bg.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: "Balsamiq Sans", sans-serif; }
+  .deckHeader {
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    z-index: 10;
+    text-align: center; }
+  .deckContent {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 60%;
+    min-height: inherit;
+    margin: 0 auto; }
+    .deckContentPotions {
+      display: flex;
+      background: rgba(141, 110, 99, 0.6);
+      z-index: 10; }
+      .deckContentPotions__active {
+        padding: 30px;
+        z-index: 10; }
+        .deckContentPotions__activeHeader {
+          margin-bottom: 20px;
+          font-size: 20px;
+          color: #fff; }
+        .deckContentPotions__activeList {
+          z-index: 10; }
+      .deckContentPotions__inventory {
+        padding: 30px;
+        z-index: 10; }
+        .deckContentPotions__inventoryHeader {
+          margin-bottom: 20px;
+          font-size: 20px;
+          color: #fff; }
+      .deckContentPotions__about {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        column-gap: 10px;
+        color: #f5f5f5;
+        font-size: 18px; }
+        .deckContentPotions__aboutImg {
+          position: relative;
+          background: url("../img/border.png") center no-repeat;
+          min-width: 64px;
+          height: 64px; }
+          .deckContentPotions__aboutImg img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%); }
+  .deckList {
+    padding: 30px 100px;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 30px;
+    z-index: 10; }
+  .deckFilter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    text-align: center;
+    z-index: 10; }
+    .deckFilter__stats {
+      color: #FFF8DC;
+      font-size: 22px; }
+    .deckFilter button {
+      border: 1px solid #FFF5EE;
+      border-radius: 3px;
+      background-color: #A0522D;
+      font-weight: 900;
+      color: #FFF5EE;
+      font-size: 20px;
+      z-index: 10; }
+      .deckFilter button:hover {
+        cursor: pointer; }
+  .deckField {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    position: relative; }
+    .deckField__block {
+      position: relative;
+      width: 195px;
+      height: 284px;
+      z-index: 10; }
+      .deckField__blockBack {
+        position: absolute;
+        width: inherit;
+        height: inherit; }
+        .deckField__blockBack img {
+          width: 100%;
+          height: 100%; }
+      .deckField__blockBorder {
+        position: absolute; }
+
+.shop {
+  background: url("../img/bg_shop.jpg") center no-repeat;
+  background-size: cover;
+  font-family: "Balsamiq Sans", sans-serif; }
+  .shopContent {
+    padding: 1px 100px 150px;
+    margin: 0 auto;
+    width: 70%;
+    z-index: 10; }
+    .shopContent__header {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: #fff0f4;
+      font-size: 32px;
+      font-weight: 900;
+      text-shadow: 1px 1px 2px black, 0 0 10px yellow; }
+      .shopContent__header span {
+        z-index: 10; }
+    .shopContent__chest {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-radius: 4px;
+      background: rgba(255, 235, 205, 0.5);
+      text-align: center;
+      z-index: 10; }
+      .shopContent__chestHeader {
+        font-size: 24px; }
+      .shopContent__chestImg {
+        width: 250px;
+        transition: 1s ease; }
+        .shopContent__chestImg:hover {
+          cursor: pointer;
+          transform: scale(1.1); }
+        .shopContent__chestImg img {
+          width: 100%; }
+      .shopContent__chestButton {
+        margin-top: 20px; }
+        .shopContent__chestButton button {
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          column-gap: 5px;
+          font-size: 24px; }
+          .shopContent__chestButton button img {
+            width: 22px; }
+          .shopContent__chestButton button:hover {
+            cursor: pointer; }
+      .shopContent__chests {
+        display: flex;
+        justify-content: center;
+        row-gap: 30px;
+        column-gap: 30px;
+        flex-wrap: wrap; }
+    .shopContent__bonus {
+      margin: 30px auto 0 auto;
+      max-width: calc(250px * 4 + 30px * 3);
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 30px;
+      row-gap: 30px;
+      justify-content: center; }
+      .shopContent__bonusBlock {
+        padding: 30px 0;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+        background: rgba(255, 235, 205, 0.3);
+        border-radius: 5px;
+        z-index: 10; }
+        .shopContent__bonusBlock__text {
+          font-weight: 900;
+          font-size: 32px;
+          color: #fff;
+          text-shadow: 1px 1px 2px black, 0 0 1em brown; }
+        .shopContent__bonusBlock__img {
+          position: relative;
+          width: 195px;
+          height: 284px; }
+          .shopContent__bonusBlock__img img {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%); }
+          .shopContent__bonusBlock__imgCurrency {
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            width: 35px;
+            height: 35px; }
+            .shopContent__bonusBlock__imgCurrency img {
+              width: 100%; }
+        .shopContent__bonusBlock__button button {
+          font-size: 24px; }
+    .shopContent__trade {
+      display: flex;
+      justify-content: center;
+      row-gap: 30px;
+      column-gap: 30px; }
+      .shopContent__tradeBlock {
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+        border-radius: 5px;
+        background: rgba(255, 235, 205, 0.3);
+        z-index: 10; }
+        .shopContent__tradeBlock__img {
+          position: relative; }
+          .shopContent__tradeBlock__imgCurrency {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 30px;
+            height: 30px; }
+            .shopContent__tradeBlock__imgCurrency img {
+              width: 100%;
+              height: 100%; }
+        .shopContent__tradeBlock__text {
+          font-weight: 900;
+          font-size: 32px;
+          color: #fff; }
+        .shopContent__tradeBlock__button button img {
+          width: 25px;
+          height: 25px; }
+
+.menu {
+  background-size: cover;
+  width: 100%;
+  height: 100vh; }
+  .menuContent {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .menuContentHeader {
+      position: absolute;
+      top: 200px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: "Balsamiq Sans", sans-serif;
+      font-size: 52px;
+      font-weight: 900;
+      color: #fff;
+      text-shadow: 1px 1px 2px black, 0 0 25px #A0522D;
+      z-index: 10; }
+    .menuContentMenu {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      row-gap: 10px; }
+      .menuContentMenu__item {
+        z-index: 10; }
+        .menuContentMenu__itemButton {
+          font-size: 26px !important; }
+
+.map {
+  width: 100%;
+  height: 100vh;
+  background: url("./../img/map-1.jpg") center no-repeat;
+  background-size: cover;
+  position: relative; }
+  .mapLocation {
+    padding: 30px;
+    background: url("../img/bg_modal.jpg") center no-repeat;
+    background-size: cover; }
+    .mapLocation__title {
+      font-size: 32px;
+      text-align: center;
+      font-family: "Balsamiq Sans", sans-serif; }
+    .mapLocation__level {
+      position: relative;
+      z-index: 10; }
+      .mapLocation__levelTitle {
+        font-family: "Balsamiq Sans", sans-serif;
+        font-size: 20px;
+        color: #fff; }
+      .mapLocation__levelInfo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .mapLocation__levelInfo__name {
+          font-size: 16px;
+          color: #cacaca; }
+          .mapLocation__levelInfo__names {
+            display: flex;
+            column-gap: 15px; }
+  .mapButton {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+    transition: 0.5s ease; }
+    .mapButton__1 {
+      top: 45%;
+      left: 15%; }
+    .mapButton__2 {
+      top: 10%;
+      left: 30%; }
+    .mapButton__3 {
+      bottom: 35%;
+      right: 20%; }
+    .mapButton__4 {
+      top: 30%;
+      right: 30%; }
+    .mapButton:hover {
+      transform: scale(1.08); }
+    .mapButtonTitle {
+      font-size: 32px;
+      font-family: "Balsamiq Sans", sans-serif;
+      font-weight: 900;
+      color: #fff;
+      text-shadow: 1px 1px 2px black, 0 0 45px #A0522D;
+      display: block; }
+    .mapButtonTrack {
+      margin: 0 auto;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: goldenrod;
+      border: 1px solid grey;
+      transition: 0.5s ease; }
+      .mapButtonTrack:hover {
+        cursor: pointer;
+        background: #e4b849; }
+
+.game {
+  padding-top: 50px;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: 100vh; }
+  .gameList {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    width: 350px;
+    z-index: 100;
+    background: #f4d4bd;
+    font-family: "Balsamiq Sans", sans-serif; }
+    .gameListEnemy {
+      border-bottom-left-radius: 10px;
+      right: 0; }
+    .gameListPlayer {
+      left: 0; }
+    .gameListBlock {
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      display: grid;
+      justify-content: center;
+      column-gap: 10px;
+      grid-template-areas: "img stats";
+      border-bottom: 1px solid saddlebrown; }
+      .gameListBlock:last-child {
+        border-bottom: none; }
+      .gameListBlock__stats {
+        padding: 10px;
+        width: 180px;
+        position: relative;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 5px; }
+        .gameListBlock__statsLine {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: space-between; }
+          .gameListBlock__statsLine img:hover {
+            cursor: pointer; }
+      .gameListBlock__img {
+        width: 90px;
+        height: 90px; }
+        .gameListBlock__img img {
+          width: 100%; }
+    .gameListHeader {
+      padding-top: 10px;
+      margin-bottom: 10px;
+      font-size: 24px;
+      text-align: center;
+      border-bottom: 1px solid saddlebrown; }
+  .gameContent {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    z-index: 11; }
+    .gameContentHeader {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-family: "Acme", sans-serif;
+      color: #fff;
+      z-index: 10; }
+    .gameContentBoard {
+      display: flex;
+      justify-content: center;
+      column-gap: 100px; }
+      .gameContentBoard__block {
+        display: flex;
+        width: 120px;
+        height: 120px;
+        background: rgba(0, 0, 0, 0.6);
+        position: relative; }
+        .gameContentBoard__block:nth-child(1) {
+          border-top-left-radius: 20px; }
+        .gameContentBoard__block:nth-child(4) {
+          border-top-right-radius: 20px; }
+        .gameContentBoard__block:nth-child(13) {
+          border-bottom-left-radius: 20px; }
+        .gameContentBoard__block:nth-child(16) {
+          border-bottom-right-radius: 20px; }
+        .gameContentBoard__block:hover {
+          cursor: pointer; }
+        .gameContentBoard__block__stats {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background: rgba(0, 0, 0, 0.6);
+          z-index: 20; }
+        .gameContentBoard__block__hp {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          top: 0;
+          left: 0;
+          border: 1px solid #cccccc;
+          border-radius: 1px; }
+          .gameContentBoard__block__hpBlock {
+            height: 18px;
+            background: green; }
+            .gameContentBoard__block__hpBlock__text {
+              position: absolute;
+              font-weight: 900;
+              color: #fff0f4;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -45%); }
+        .gameContentBoard__block__damage {
+          bottom: 0;
+          left: 0; }
+        .gameContentBoard__block__armor {
+          bottom: 0;
+          right: 0; }
+      .gameContentBoard__enemy, .gameContentBoard__player {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px; }
+        .gameContentBoard__enemyBlock, .gameContentBoard__playerBlock {
+          position: relative; }
+          .gameContentBoard__enemyBlock__support, .gameContentBoard__playerBlock__support {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            z-index: 20; }
+            .gameContentBoard__enemyBlock__supportItem, .gameContentBoard__playerBlock__supportItem {
+              width: 32px;
+              height: 32px;
+              z-index: 21; }
+          .gameContentBoard__enemyBlock__dead, .gameContentBoard__playerBlock__dead {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 101; }
+            .gameContentBoard__enemyBlock__dead img, .gameContentBoard__playerBlock__dead img {
+              width: 100%; }
+          .gameContentBoard__enemyBlock__img, .gameContentBoard__playerBlock__img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 10; }
+            .gameContentBoard__enemyBlock__img__damage, .gameContentBoard__playerBlock__img__damage {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 32px;
+              height: 32px; }
+              .gameContentBoard__enemyBlock__img__damage img, .gameContentBoard__playerBlock__img__damage img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 32px !important;
+                height: 32px; }
+            .gameContentBoard__enemyBlock__img__upgrade, .gameContentBoard__playerBlock__img__upgrade {
+              position: absolute;
+              right: 0;
+              width: 24px;
+              height: 24px; }
+              .gameContentBoard__enemyBlock__img__upgradeDamage, .gameContentBoard__playerBlock__img__upgradeDamage {
+                bottom: 0; }
+              .gameContentBoard__enemyBlock__img__upgradeHp, .gameContentBoard__playerBlock__img__upgradeHp {
+                bottom: 24px; }
+              .gameContentBoard__enemyBlock__img__upgradeArmor, .gameContentBoard__playerBlock__img__upgradeArmor {
+                bottom: 48px; }
+              .gameContentBoard__enemyBlock__img__upgrade img, .gameContentBoard__playerBlock__img__upgrade img {
+                width: 100%; }
+            .gameContentBoard__enemyBlock__img img, .gameContentBoard__playerBlock__img img {
+              width: 100%; }
+    .gameContentMenu {
+      padding: 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(2*510px + 300px);
+      font-family: "Balsamiq Sans", sans-serif;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      background: rgba(244, 212, 189, 0.9);
+      z-index: 10; }
+      .gameContentMenu__active {
+        padding: 15px; }
+        .gameContentMenu__activePerson {
+          display: grid;
+          grid-template-areas: "img stats upgrades" "about about about" "button button button"; }
+          .gameContentMenu__activePerson__stat {
+            display: flex;
+            align-items: center;
+            width: 160px;
+            position: relative; }
+            .gameContentMenu__activePerson__stats {
+              grid-area: stats; }
+          .gameContentMenu__activePerson__upgrades {
+            margin-top: -64px;
+            margin-left: 24px;
+            grid-area: upgrades; }
+            .gameContentMenu__activePerson__upgradesBlock {
+              position: relative;
+              background: url("../img/border.png") center no-repeat;
+              width: 64px;
+              height: 64px; }
+              .gameContentMenu__activePerson__upgradesBlock__img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); }
+          .gameContentMenu__activePerson__about {
+            grid-area: about;
+            font-size: 16px; }
+          .gameContentMenu__activePerson__img {
+            grid-area: img;
+            margin-right: 16px;
+            width: 110px;
+            height: 110px;
+            border: 2px solid saddlebrown; }
+            .gameContentMenu__activePerson__img img {
+              width: 100%; }
+          .gameContentMenu__activePerson__support {
+            display: flex;
+            column-gap: 5px; }
+            .gameContentMenu__activePerson__supportItem {
+              border: 1px solid black; }
+        .gameContentMenu__activeBlock {
+          display: grid;
+          grid-template-areas: "img about" "button button";
+          column-gap: 15px;
+          row-gap: 5px; }
+          .gameContentMenu__activeBlock__img {
+            grid-area: img;
+            position: relative;
+            width: 64px;
+            height: 64px;
+            background: url("../img/border.png") center no-repeat; }
+            .gameContentMenu__activeBlock__img img {
+              max-width: 100px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%); }
+          .gameContentMenu__activeBlock__about {
+            grid-area: about;
+            font-size: 18px; }
+            .gameContentMenu__activeBlock__about__danger {
+              margin-top: 10px; }
+          .gameContentMenu__activeBlock__button {
+            grid-area: button;
+            text-align: center; }
+        .gameContentMenu__activeHeader {
+          text-align: center;
+          margin-bottom: 5px;
+          color: #424242;
+          font-size: 24px; }
+      .gameContentMenu__inventory {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        padding: 10px;
+        z-index: 10;
+        border-right: 2px solid saddlebrown; }
+        .gameContentMenu__inventory__block {
+          text-align: center; }
+          .gameContentMenu__inventory__blockHeader {
+            margin-bottom: 5px;
+            color: #424242;
+            font-size: 24px; }
+          .gameContentMenu__inventory__blockList {
+            margin: 0 auto;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(5, 64px);
+            grid-gap: 10px; }
+            .gameContentMenu__inventory__blockList__upgrades {
+              grid-template-columns: repeat(1, 64px); }
+            .gameContentMenu__inventory__blockList__item {
+              position: relative;
+              background: url("../img/border.png") center no-repeat;
+              width: 64px;
+              height: 64px; }
+              .gameContentMenu__inventory__blockList__item:hover {
+                cursor: pointer; }
+              .gameContentMenu__inventory__blockList__itemText {
+                position: absolute;
+                text-align: center;
+                bottom: 4px;
+                right: 4px;
+                background: #e4a672;
+                border-top-left-radius: 10px;
+                color: #181425;
+                width: 24px;
+                height: 24px; }
+                .gameContentMenu__inventory__blockList__itemText__block {
+                  position: absolute;
+                  font-weight: 900;
+                  font-size: 18px;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%); }
+              .gameContentMenu__inventory__blockList__itemImg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); }
+                .gameContentMenu__inventory__blockList__itemImg img {
+                  width: 100%; }
+      .gameContentMenu__characters {
+        padding: 10px;
+        z-index: 10;
+        border-right: 2px solid saddlebrown; }
+        .gameContentMenu__charactersHeader {
+          margin-bottom: 15px;
+          text-align: center;
+          color: #424242;
+          font-size: 24px; }
+        .gameContentMenu__charactersList {
+          display: flex;
+          column-gap: 15px; }
+        .gameContentMenu__charactersBlock {
+          z-index: 10; }
+          .gameContentMenu__charactersBlock__none {
+            width: 60px;
+            height: 60px;
+            background: #9d532f;
+            border: 2px solid #5d4037; }
+          .gameContentMenu__charactersBlock__price {
+            text-align: center; }
+            .gameContentMenu__charactersBlock__priceButton {
+              font-size: 20px;
+              width: 60px;
+              padding-top: 0;
+              padding-bottom: 0;
+              background: #9d532f;
+              border: 1px solid #5d4037;
+              color: white; }
+          .gameContentMenu__charactersBlock__img {
+            margin-bottom: 10px;
+            width: 60px;
+            height: 60px;
+            z-index: 10;
+            border: 3px solid #9d532f;
+            border-radius: 2px; }
+            .gameContentMenu__charactersBlock__img:hover {
+              cursor: pointer; }
+            .gameContentMenu__charactersBlock__img img {
+              width: 100%; }
+      .gameContentMenu__popup {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        z-index: 100; }
+        .gameContentMenu__popupText {
+          font-size: 24px;
+          color: #fff0f4;
+          text-shadow: 1px 1px 2px darkgrey, 0 0 5px yellow; }
+
+.forge {
+  padding-top: 100px;
+  padding-bottom: 10px;
+  background: url("../img/bg_forge.jpg") center no-repeat;
+  background-size: cover; }
+  .forgeContent {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 80%; }
+    .forgeContent__metals {
+      padding: 10px; }
+      .forgeContent__metalsList {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: calc(64px*3 + 2*10px + 2*5px);
+        grid-gap: 5px;
+        background: rgba(141, 110, 99, 0.6); }
+        .forgeContent__metalsList__item {
+          position: relative;
+          background: url("../img/border.png") center no-repeat;
+          width: 64px;
+          height: 64px; }
+          .forgeContent__metalsList__item:hover {
+            cursor: pointer; }
+          .forgeContent__metalsList__itemImg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 32px;
+            height: 32px; }
+            .forgeContent__metalsList__itemImg img {
+              width: 100%; }
+    .forgeContent__craft {
+      background: #ff9e80; }
+      .forgeContent__craftMenu {
+        display: flex;
+        justify-content: center;
+        column-gap: 10px; }
+
+.character {
+  font-family: "Acme", sans-serif;
+  width: 199px;
+  height: 288px;
+  transition: 0.6s ease; }
+  .characterCard {
+    position: relative; }
+  .characterClosed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: 0.6s ease; }
+    .characterClosed:hover {
+      cursor: pointer;
+      transform: scale(1.02); }
+    .characterClosed::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(95, 95, 95, 0.5);
+      z-index: 101; }
+  .characterImg__avatar {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    z-index: 1; }
+    .characterImg__avatar img {
+      width: 100%;
+      height: 100%; }
+  .characterImg__border {
+    position: absolute;
+    z-index: 2; }
+  .characterImg__type {
+    position: absolute;
+    left: 30px;
+    width: 35px;
+    height: 35px;
+    top: 170px;
+    z-index: 3; }
+    .characterImg__type img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; }
+    .characterImg__type:hover {
+      cursor: pointer; }
+  .characterImg__name {
+    position: absolute;
+    font-size: 24px;
+    top: 175px;
+    font-weight: 900;
+    right: 40px;
+    z-index: 3;
+    color: #313031; }
+  .characterImg__stats {
+    position: absolute;
+    width: 130px;
+    top: 210px;
+    left: 30px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    font-size: 24px;
+    color: #424242; }
+
+.characterHover:hover {
+  cursor: pointer;
+  transform: scale(1.02); }
+
+.cardFieldHover:hover {
+  cursor: pointer; }
+
+.cardInfo {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "img stats" "img about" "level history" "button button";
+  column-gap: 30px;
+  background: url("../img/bg_modal.jpg") center no-repeat;
+  background-size: cover;
+  position: relative; }
+  .cardInfo__img {
+    grid-area: img;
+    width: 150px;
+    height: 220px;
+    position: relative;
+    z-index: 10; }
+    .cardInfo__imgSkill {
+      position: absolute;
+      top: 140px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 40px; }
+      .cardInfo__imgSkill:hover {
+        cursor: pointer; }
+      .cardInfo__imgSkill img {
+        width: 100%; }
+    .cardInfo__imgAvatar {
+      position: absolute;
+      width: 120px;
+      left: 50%;
+      top: 7px;
+      transform: translateX(-50%);
+      height: 120px; }
+      .cardInfo__imgAvatar img {
+        width: 100%; }
+    .cardInfo__imgBorder {
+      position: absolute;
+      width: 150px; }
+      .cardInfo__imgBorder img {
+        width: 100%; }
+  .cardInfo__stat {
+    padding-left: 20px;
+    font-family: "Balsamiq Sans", sans-serif;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 900;
+    column-gap: 10px;
+    z-index: 10; }
+    .cardInfo__statImg:hover {
+      cursor: pointer; }
+    .cardInfo__stat div {
+      display: flex;
+      align-items: center; }
+    .cardInfo__stats {
+      grid-area: stats;
+      display: flex;
+      flex-direction: column;
+      position: relative; }
+      .cardInfo__statsImg {
+        position: absolute;
+        width: 200px;
+        z-index: 1; }
+        .cardInfo__statsImg img {
+          width: 100%; }
+  .cardInfo__about {
+    grid-area: about;
+    width: 200px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    column-gap: 20px;
+    color: #fff;
+    font-weight: 900;
+    font-family: "Balsamiq Sans", sans-serif;
+    font-size: 22px; }
+    .cardInfo__aboutImg {
+      position: absolute;
+      width: 200px; }
+      .cardInfo__aboutImg img {
+        width: 100%; }
+    .cardInfo__aboutRarity {
+      z-index: 10; }
+    .cardInfo__aboutType {
+      z-index: 10; }
+  .cardInfo__level {
+    grid-area: level;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    z-index: 10; }
+  .cardInfo__history {
+    grid-area: history;
+    display: flex;
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px 5px #282c34;
+    line-height: 20px;
+    z-index: 10; }
+  .cardInfo__button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    grid-area: button;
+    text-align: center;
+    z-index: 10; }
+    .cardInfo__button button {
+      font-family: "Balsamiq Sans", sans-serif;
+      font-size: 18px;
+      border: 1px solid #FFF5EE;
+      border-radius: 3px;
+      background-color: #A0522D;
+      font-weight: 900;
+      color: #FFF5EE; }
+      .cardInfo__button button:hover {
+        cursor: pointer; }
+  .cardInfo__upgrade {
+    padding-bottom: 80px;
+    margin: 0 auto;
+    font-family: "Balsamiq Sans", sans-serif; }
+    .cardInfo__upgradeContent {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      filter: drop-shadow(0 0 30px goldenrod);
+      z-index: 10; }
+      .cardInfo__upgradeContent__img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        width: 250px; }
+        .cardInfo__upgradeContent__img img {
+          width: 100%; }
+      .cardInfo__upgradeContent__block {
+        display: flex;
+        justify-content: space-between;
+        width: 210px;
+        z-index: 11;
+        font-size: 20px;
+        font-weight: 700; }
+        .cardInfo__upgradeContent__blockPrev {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 75px; }
+        .cardInfo__upgradeContent__blockNext {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 75px; }
+        .cardInfo__upgradeContent__blockArrow {
+          font-size: 24px;
+          color: #39783e; }
+    .cardInfo__upgradeHeader {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+      font-weight: 900;
+      color: #fff0f6; }
+      .cardInfo__upgradeHeader span {
+        z-index: 10; }
+
+.chestInfo {
+  padding: 30px;
+  background: url("../img/bg_modal.jpg") center no-repeat;
+  font-family: "Balsamiq Sans", sans-serif; }
+  .chestInfo__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center; }
+  .chestInfo__loot {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    font-size: 18px;
+    background: rgba(210, 180, 140, 0.5);
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 900;
+    z-index: 10; }
+    .chestInfo__lootImg {
+      min-width: 30px;
+      max-width: 100px; }
+      .chestInfo__lootImg img {
+        width: 100%; }
+  .chestInfo__title {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    z-index: 10; }
+.chestOpen {
+  padding: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  min-height: 330px;
+  background: url("../img/bg_modal.jpg") center no-repeat;
+  background-size: cover; }
+  .chestOpen__road {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 7s ease; }
+    .chestOpen__roadBlock {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+      width: 100px;
+      height: 150px;
+      border-radius: 5px;
+      filter: drop-shadow(0 0 10px #000); }
+      .chestOpen__roadBlock__img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30px !important;
+        height: 30px !important; }
+        .chestOpen__roadBlock__img img {
+          width: 100%; }
+      .chestOpen__roadBlock img {
+        width: 100%;
+        height: 100%; }
+  .chestOpen__loot {
+    padding-bottom: 30px;
+    font-family: "Balsamiq Sans", sans-serif;
+    z-index: 10;
+    display: flex;
+    flex-direction: column; }
+    .chestOpen__lootHeader {
+      text-align: center;
+      font-size: 32px;
+      z-index: 10;
+      font-weight: 900;
+      color: #fff; }
+    .chestOpen__lootBlock {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 20px;
+      font-size: 40px;
+      font-weight: 900;
+      text-shadow: 0 0 30px #fff;
+      color: #fff0f6; }
+      .chestOpen__lootBlock__text {
+        z-index: 10; }
+      .chestOpen__lootBlock__img {
+        width: 40px;
+        z-index: 100; }
+        .chestOpen__lootBlock__img img {
+          width: 100%; }
+.chestRoad {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid #8B4513;
+  top: 50px;
+  overflow: hidden;
+  width: 800px;
+  height: 180px;
+  border-radius: 10px;
+  background: rgba(210, 180, 140, 0.35);
+  z-index: 10; }
+  .chestRoadResult {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-top: 20px solid #8B4513;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+    z-index: 10; }
+  .chestRoadButton {
+    position: absolute;
+    bottom: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100vh; }
+
+.nav {
+  padding: 10px;
+  width: calc(5*110px + 4*20px);
+  position: fixed;
+  font-size: 28px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background-color: #263238;
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  z-index: 100; }
+  .navItem {
+    width: 110px;
+    text-align: center; }
+  .nav a {
+    font-family: "Balsamiq Sans", sans-serif;
+    text-decoration: none;
+    color: #fff; }
+    .nav a:hover {
+      cursor: pointer;
+      color: #e3e3e3; }
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif; }
+
+.ant-modal-header {
+  background: #8B4513;
+  z-index: 10; }
+.ant-modal-title {
+  font-size: 32px;
+  color: #fff;
+  font-family: "Acme", "Balsamiq Sans", sans-serif !important;
+  z-index: 10; }
+
+.ant-progress-steps-item {
+  width: 24px !important;
+  height: 16px !important; }
+
+.ant-progress-steps-outer {
+  flex-wrap: wrap;
+  max-width: calc(24px * 4 + 10px);
+  row-gap: 2px; }
+
+.darken {
+  position: relative; }
+  .darken::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); }
+  .darken-2::after {
+    background: rgba(0, 0, 0, 0.2) !important; }
+  .darken-4::after {
+    background: rgba(0, 0, 0, 0.4) !important; }
+  .darken-6::after {
+    background: rgba(0, 0, 0, 0.6) !important; }
+  .darken-8::after {
+    background: rgba(0, 0, 0, 0.8) !important; }
+
+.textCommon {
+  font-weight: 900;
+  color: #fff;
+  font-size: 28px;
+  font-family: "Balsamiq Sans", sans-serif;
+  z-index: 10;
+  text-shadow: 1px 1px 2px black, 0 0 7px #A0522D; }
+
+.buttonBrown {
+  border: 1px solid #FFF5EE;
+  border-radius: 3px;
+  background-color: #A0522D;
+  font-weight: 900;
+  color: #FFF5EE;
+  font-size: 20px;
+  font-family: "Balsamiq Sans", sans-serif;
+  transition: 0.4s ease; }
+  .buttonBrown:hover {
+    cursor: pointer;
+    transform: scale(1.05); }
+
+button {
+  font-family: "Balsamiq Sans", sans-serif; }
+  button:hover {
+    cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+.forge {
+  padding-top: 100px;
+  padding-bottom: 10px;
+  background: url("../img/bg_forge.jpg") center no-repeat;
+  background-size: cover; }
+  .forgeContent {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 80%; }
+    .forgeContent__metals {
+      padding: 10px; }
+      .forgeContent__metalsList {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: calc(64px*3 + 2*10px + 2*5px);
+        grid-gap: 5px;
+        background: rgba(141, 110, 99, 0.6); }
+        .forgeContent__metalsList__item {
+          position: relative;
+          background: url("../img/border.png") center no-repeat;
+          width: 64px;
+          height: 64px; }
+          .forgeContent__metalsList__item:hover {
+            cursor: pointer; }
+          .forgeContent__metalsList__itemImg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 32px;
+            height: 32px; }
+            .forgeContent__metalsList__itemImg img {
+              width: 100%; }
+    .forgeContent__craft {
+      background: #ff9e80; }
+      .forgeContent__craftMenu {
+        display: flex;
+        justify-content: center;
+        column-gap: 10px; }
+
+/*# sourceMappingURL=ForgePage.css.map */
